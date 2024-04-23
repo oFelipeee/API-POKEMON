@@ -1,0 +1,41 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <link rel="stylesheet" href="style.css">
+    <title>Document</title>
+</head>
+<body>
+
+    <main>
+        <img src="https://1000marcas.net/wp-content/uploads/2020/01/Logo-Pokemon.png" alt="logo" class="logo">
+        <form>
+          <!-- nowadays 2023 the API allows 1010 pokemons
+            but show going to show until 650 for the nice images-->
+          <input type="text" placeholder="Pesquise por numero ou coloque o nome do pokemon!" id="search">
+          <button type="submit" class="btn btn-find">Pesquisar pokemon</button>
+          <button type="button" class="btn btn-random">Aleatório!</button>
+        </form>
+        <div class="loading d-none">
+          <img src="https://s2.coinmarketcap.com/static/img/coins/200x200/8303.png" alt="pokeball" class="pokeball">
+        </div>
+        <div class="result">
+          <!-- <div class="pokebox found">
+                <span class="closebox">x</span>
+                <img src="https://raw.githubusercontent.com/PokeAPI/sprites/master/sprites/pokemon/other/dream-world/1.svg" alt="xd" class="pokemon">
+                <h3 class="pokename">squirtle</h3>
+                <p class="pokenumber">#003</p>
+          </div> -->
+          <!-- <div class="pokebox notfound">
+            <span class="closebox">x</span>
+            <h1><span>4</span><img src="./img/pokeball.png" alt="pokeball"/><span>4</span></h1>
+            <p>Pokemon <span class="pokenumber">#23523</span> not found</p>
+          </div> -->
+        </div>
+      </main>
+
+      <script src="script.js"></script>
+    
+</body>
+</html>

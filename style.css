@@ -1,0 +1,141 @@
+@import url('https://fonts.googleapis.com/css2?family=Montserrat:wght@200&family=Open+Sans:wght@300&display=swap');
+
+*{
+  margin:0;
+  padding:0;
+  box-sizing: border-box;
+}
+
+body{
+    font-family: 'Montserrat', sans-serif;
+    text-align: center;
+    background: #fcf4ed linear-gradient(0deg, #fceded 0%, #f1dcdc 50%, rgb(246, 188, 188) 100%) no-repeat;
+}
+
+main{
+  max-width: 960px;
+  margin: 0 auto;
+  text-align: center;
+}
+
+button.btn{
+  padding: .9rem;
+  background: #6f1b1b;
+  color :#fff;
+  outline:none;
+  border:none;
+  cursor: pointer;
+  font-size: 1rem;
+  border-radius: 0.5rem;
+}
+button.btn.btn-random{
+  background: #b03030;
+}
+button.btn:hover{
+  background: rgb(189, 85, 85);
+}
+
+.logo{
+  width: 180px;
+/*   max-width: 280px;  */
+/*   height: 150px; */
+/*   margin: 10px auto 20px; */
+}
+form{
+  display: flex;
+  justify-content: space-around;
+  align-items: center;
+  gap: 1rem;
+  padding: 20px;
+}
+
+form input{
+  width: 50%;
+  padding: .5rem;
+}
+
+/* loading */
+.loading .pokeball{
+  display: inline-block;
+  max-width: 120px;
+  margin: 2rem 1rem;
+
+  animation: loadingEffect 1s infinite;
+}
+
+@keyframes loadingEffect {
+  0%{
+      transform: rotate(0) scale(.5);
+  }
+  100%{
+      transform: rotate(360deg) scale(1);
+  }
+}
+
+/* result */
+.result.active{
+  cursor: pointer;
+  width: 400px;
+  height: 300px;
+  margin: 1.2rem auto 0;
+  color: #6f1b1b;
+  font-weight: bold;
+}
+.pokebox{
+  height: 100%;
+  background: #fff;
+  border-radius: .6rem;
+  position: relative;
+  overflow: hidden;
+  box-shadow: 0px 9px 13px -6px rgba(0,0,0,0.3);
+  display: flex;
+  flex-direction: column;
+  align-items: center;
+  justify-content: center;
+  z-index: 3;
+}
+.pokebox .closebox{
+  position: absolute;
+  right: .75em;
+  top: .25em;
+  font-size: 2em;
+}
+ /* circle shape */
+ .pokebox.found::before{
+  content:'';
+  position: absolute;
+  z-index: -1;
+  top:0;
+  left: 0;
+  width: 100%;
+  height: 270px;
+  background: linear-gradient(to top, #ffb6b6,#f78787, #d48383);
+  clip-path: circle(400px at 50% -48.5%);
+ }
+ .pokebox.found .pokemon{
+  margin-bottom: 1rem;
+  width: 200px;
+  height: 200px;
+ }
+ .pokebox.found .pokename{
+  text-transform: capitalize;
+  font-size: 1.2rem;
+  line-height: 1;
+  letter-spacing: 3px;
+  margin-bottom: .5rem;
+ }
+ /* notfound */
+ .pokebox.notfound span:not(span.pokenumber, span.closebox){
+  color: #122d30;
+  display: inline-block;
+  font-size: 4em;
+ }
+ .pokebox.notfound img{
+  max-width: 90px;
+ }
+ .pokebox.notfound span.pokenumber{
+  color: red
+ }
+.d-none{
+  display: none;
+}
