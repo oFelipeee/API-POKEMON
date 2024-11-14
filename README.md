@@ -1,4 +1,4 @@
-# Aplicação de uma pokedex
+##👾Aplicação de uma pokedex
 
 ❗ Pokedex totalemnte interativa, podendo ver varios tipos de pokemons, seus tipos e suas evoluções.
 
