@@ -1,6 +1,6 @@
 ## 👾Aplicação de uma pokedex
 
-      Pokemons
+                                                                Pokemons
 
 ❗ Pokedex totalmente interativa, podendo ver varios tipos de pokemons, seus tipos e suas evoluções.
 
