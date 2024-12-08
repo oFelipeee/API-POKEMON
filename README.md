@@ -1,11 +1,23 @@
-## 👾Aplicação de uma pokedex
+# 💻 API Pokémon
 
-                                                  Pokemons
+Bem-vindo à API Pokémon! Este projeto é uma API desenvolvida para fornecer informações sobre Pokémon, incluindo detalhes como tipos, habilidades, estatísticas e muito mais.
 
-❗ Pokedex totalmente interativa, podendo ver varios tipos de pokemons, seus tipos e suas evoluções.
+## 📋 Funcionalidades
 
-# Linguagens usadas no projeto:
-<img align="center" alt="html5" src="https://img.shields.io/badge/HTML5-E34F26?style=for-the-badge&logo=html5&logoColor=white" /> <img align="center" alt="css" src="https://img.shields.io/badge/CSS3-1572B6?style=for-the-badge&logo=css3&logoColor=white" /> <img align="center" alt="js" src="https://img.shields.io/badge/JavaScript-F7DF1E?style=for-the-badge&logo=javascript&logoColor=black" />
+- Consultar informações detalhadas de Pokémon.
+- Listagem de Pokémon com paginação.
+- Filtros por tipo, geração e outras características.
+- Rotas para obter informações de habilidades e tipos.
 
-# Desenvolvido por:
-Felipe paulino dos Santos
+## 🚀 Tecnologias Utilizadas
+
+- **Node.js** - Plataforma de execução JavaScript.
+- **Express** - Framework para construção de APIs.
+- **MongoDB** - Banco de dados NoSQL para armazenamento de informações.
+- **Mongoose** - Modelagem de dados no MongoDB.
+- **PokéAPI** (se aplicável) - Integração para dados adicionais sobre Pokémon.
+
+## 📝 Licença
+Este projeto está sob a licença MIT
+
+Dsenvolvido por **Felipe Paulino dos Santos**
